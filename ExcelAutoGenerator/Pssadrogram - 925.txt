@@ -1,0 +1,27 @@
+﻿// See https://aka.ms/new-console-template for more information
+using Microsoft.AspNetCore.Mvc;
+using System.IO;
+using ExcelAutoGenerator;
+using System.Collections.Generic;
+
+Console.WriteLine("Application Started!");
+string fromDate = string.Empty;
+string toDate = string.Empty;
+DateTime fromDateT = DateTime.Now;
+DateTime toDateT = DateTime.Now;
+string OutpathFolder = @"C:\\Users\\Public\\Downloads\\ExcelGenerator\\" + fromDateT.ToString("MM") + "_" + fromDateT.ToString("YYYY");
+Console.WriteLine("Enter from date(MM/DD/YYYY):");
+fromDate = Console.ReadLine();
+Console.WriteLine("Enter to date(MM/DD/YYYY):");
+toDate = Console.ReadLine();
+fromDateT = Convert.ToDateTime(fromDate);
+toDateT = Convert.ToDateTime(toDate);
+if (!Directory.Exists(OutpathFolder))
+{
+    Directory.CreateDirectory(OutpathFolder);
+}
+
+string inputPathFile = "Readychange.xlsx";
+string OutpathFile = OutpathFolder + "\\" + fromDateT.ToString("MM") + "_" + fromDateT.ToString("YYYY") + ".xlsx";
+File.Copy(inputPathFile, OutpathFile, true);
+
