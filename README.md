@@ -1,4 +1,4 @@
-This is simple xls generator for Parkside motel.
+This is simple xls generator for Hospitality.
 
 
 
@@ -10,3 +10,9 @@ https://drive.google.com/drive/folders/19rqcHtFcHw0wR2N3Crpx74LibQ6bmGfs?usp=dri
 3. Open in Google Sheet online and generate pdf to print
 4. while setting up file we need to set fit to page and Top 0.357" Left/Right 0.432" Bottom 0.507"
 5. then generate pdf or print directly
+
+
+Thank you
+Hardikbhai Patel
+
+Thank you for idea @Parkside Motel, Peterborough, CA.
